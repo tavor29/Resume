@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tavor Ben Shahar — IT Project Manager</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#98a2b3; --accent:#22c55e;
+      --glass: rgba(255,255,255,0.03);
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{
+      margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#071021 0%, #071627 100%); color:#e6eef6;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      padding:36px;
+      display:flex; align-items:flex-start; justify-content:center;
+    }
+    .wrap{width:100%; max-width:980px;}
+    .header{
+      display:flex; gap:18px; align-items:center; margin-bottom:18px;
+    }
+    .avatar{
+      width:96px; height:96px; border-radius:12px; background:linear-gradient(135deg,#0ea5a4,#7c3aed);
+      display:flex; align-items:center; justify-content:center; font-weight:700; font-size:32px;
+      color:#04202a; flex:0 0 96px; box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+    }
+    .title{flex:1}
+    h1{margin:0; font-size:22px; letter-spacing: -0.4px}
+    .sub{margin:6px 0 0; color:var(--muted); font-size:14px}
+    .controls{display:flex; gap:8px; align-items:center}
+    button.icon{
+      background:transparent; border:1px solid rgba(255,255,255,0.06); color:var(--muted);
+      padding:8px 12px; border-radius:8px; cursor:pointer; font-size:13px;
+    }
+    .layout{display:grid; grid-template-columns: 1fr 340px; gap:18px; align-items:start;}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:12px; padding:18px; box-shadow: 0 6px 22px rgba(2,6,23,0.6); border:1px solid rgba(255,255,255,0.03);
+    }
+    .section{margin-bottom:14px}
+    h2{margin:0 0 12px 0; font-size:15px}
+    p{margin:0; color:var(--muted); line-height:1.45; font-size:14px}
+    ul{margin:8px 0 0 18px; color:var(--muted); padding:0}
+    li{margin-bottom:8px}
+    .skill-list{display:flex; flex-wrap:wrap; gap:8px}
+    .skill{background:var(--glass); padding:6px 10px; border-radius:8px; color:var(--muted); font-size:13px}
+    .project{border-left:3px solid rgba(255,255,255,0.03); padding-left:12px; margin-bottom:12px}
+    .meta{color:var(--muted); font-size:13px; margin-top:6px}
+    .small{font-size:13px; color:var(--muted)}
+    .contact-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:8px}
+    a.link{color:var(--accent); text-decoration:none}
+    footer{margin-top:18px; color:var(--muted); font-size:13px; text-align:center}
+    /* responsive */
+    @media (max-width:900px){
+      .layout{grid-template-columns:1fr; }
+      .header{flex-direction:column; align-items:flex-start}
+      .avatar{width:80px; height:80px}
+    }
+    /* print */
+    @media print{
+      body{background:white; color:black}
+      .card{box-shadow:none; border: none; background:transparent}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="avatar" aria-hidden="true">TA</div>
+      <div class="title">
+        <h1>Tavor Ben Shahar — IT Project Manager</h1>
+        <div class="sub">IT Infrastructure & Data Center Projects • Network readiness • Project delivery & stakeholder management</div>
+        <div class="contact-row" style="margin-top:10px">
+          <div class="small">Location: Tel Aviv, Israel</div>
+          <div class="small">Open to: consulting, side projects, AI tooling</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="icon" id="printBtn" title="Print resume">Print</button>
+        <button class="icon" id="copyEmail" title="Copy email to clipboard">Copy contact</button>
+      </div>
+    </div>
+
+    <div class="layout">
+      <!-- Main column -->
+      <div>
+        <div class="card section">
+          <h2>Professional Summary</h2>
+          <p>
+            IT Project Manager with hands-on experience planning and delivering IT infrastructure for new office buildings and data center projects.
+            Experienced coordinating across contractors, facilities, procurement and network teams to ensure network readiness (IDFs/MDFs), ISP connectivity,
+            storage deployments and active infrastructure delivery. Comfortable turning ambiguous requirements into practical delivery plans and driving stakeholder alignment.
+          </p>
+        </div>
+
+        <div class="card section">
+          <h2>Core Skills</h2>
+          <div class="skill-list" style="margin-top:8px">
+            <div class="skill">Project Management</div>
+            <div class="skill">Network Infrastructure (IDF/MDF)</div>
+            <div class="skill">Vendor & Stakeholder Management</div>
+            <div class="skill">Storage Solutions (Rubrik)</div>
+            <div class="skill">Procurement & Deployment</div>
+            <div class="skill">Risk & Timeline Mitigation</div>
+            <div class="skill">Documentation & Handover</div>
+            <div class="skill">Agile & Waterfall (experience in waterfall, exploring Agile)</div>
+          </div>
+        </div>
+
+        <div class="card section">
+          <h2>Selected Projects</h2>
+
+          <div class="project">
+            <strong>PDC5 / B5 — IT Infrastructure (Lead IT Project Manager)</strong>
+            <div class="meta">Managed planning and readiness for a new office building: IDF/MDF setup, ISP circuits, rack & cable coordination, and cross-team delivery. Led coordination with construction, security (camera systems), facilities, and third-party network engineers to ensure timely activation and seamless handover to operations.</div>
+          </div>
+
+          <div class="project">
+            <strong>Rubrik Data Storage Implementation</strong>
+            <div class="meta">Oversaw Rubrik server deployment to upgrade data storage capabilities — covering procurement, hardware delivery, racking, basic validation and stakeholder acceptance testing.</div>
+          </div>
+
+          <div class="project">
+            <strong>Campus & RND Core Switches Upgrade</strong>
+            <div class="meta">Planned and executed network core upgrades for campus and R&D networks: procurement, downtime windows, configuration coordination, and post-upgrade validation.</div>
+          </div>
+
+          <div class="project">
+            <strong>Tavor — IT Project Manager</strong>
+            <div class="meta">General IT infrastructure delivery, representing IT in multi-discipline building projects and ensuring technology readiness for users and teams.</div>
+          </div>
+
+        </div>
+
+        <div class="card section">
+          <h2>Certifications & Learning</h2>
+          <ul>
+            <li>Applying for PMP (Project Management Professional) — preparing application and project descriptions</li>
+            <li>Studying Six Sigma Lean Green Belt</li>
+            <li>Interested in Data Center Certification (CVC)</li>
+            <li>Self-study: generative AI tools, prompt engineering, and applied AI</li>
+          </ul>
+        </div>
+
+        <div class="card section">
+          <h2>How I Work</h2>
+          <ul>
+            <li>Drive clear action items and maintain ownership of delivery.</li>
+            <li>Focus on pragmatic solutions: reduce timeline risk and arrange contingencies for hardware/logistics.</li>
+            <li>Prioritize stakeholder alignment (procurement, facilities, security, external contractors).</li>
+            <li>Prefer to document step-by-step playbooks for repeatable infrastructure delivery.</li>
+          </ul>
+        </div>
+
+        <div class="card section">
+          <h2>Side Projects & Interests</h2>
+          <p class="small">I enjoy exploring AI tooling, building small automation projects, and teaching/mentoring. Outside work: chess, gym & sports, guitar and drums, reading and learning new skills.</p>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <aside>
+        <div class="card section">
+          <h2>Contact</h2>
+          <p class="small">Name: <strong>Tavor Ben Shahar</strong></p>
+          <p class="small">Email: <span id="emailPlaceholder">your.email@example.com</span></p>
+          <p class="small">GitHub: <a class="link" href="#" id="githubLink">github.com/your-username</a></p>
+          <p class="small">Location: Tel Aviv, Israel</p>
+          <div style="margin-top:8px">
+            <small class="small">Tip: replace placeholders with your actual contact info in the HTML before publishing.</small>
+          </div>
+        </div>
+
+        <div class="card section">
+          <h2>Quick Facts</h2>
+          <ul>
+            <li>Languages: English (fluent), Hebrew (native)</li>
+            <li>Work style: Detailed, outcome-oriented, strong cross-team communicator</li>
+            <li>Availability: 1–2 hours/day for side projects; extra on weekends</li>
+          </ul>
+        </div>
+
+        <div class="card section">
+          <h2>Tools & Platforms</h2>
+          <div class="skill-list" style="margin-top:8px">
+            <div class="skill">SmartSheet</div>
+            <div class="skill">MyPM (migration experience)</div>
+            <div class="skill">Airtable / Notion</div>
+            <div class="skill">Slack / Teams</div>
+            <div class="skill">Basic scripting / automation</div>
+          </div>
+        </div>
+
+        <div class="card section">
+          <h2>Availability & Roles</h2>
+          <p class="small">Open to consulting, freelance implementation projects, and short-term contract work related to IT infrastructure and automation.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Built with ❤️ — paste this file as <code>index.html</code> and edit placeholders (email, GitHub) before deploying to GitHub Pages.
+    </footer>
+  </div>
+
+  <script>
+    // Small interactive helpers: print and copy contact
+    document.getElementById('printBtn').addEventListener('click', function(){ window.print(); });
+
+    document.getElementById('copyEmail').addEventListener('click', async function(){
+      const emailElement = document.getElementById('emailPlaceholder');
+      const text = emailElement.textContent.trim();
+      try {
+        await navigator.clipboard.writeText(text);
+        this.textContent = "Copied!";
+        setTimeout(()=> this.textContent = "Copy contact", 1500);
+      } catch(e){
+        alert("Copy failed — please copy manually: " + text);
+      }
+    });
+
+    // If user didn't change placeholders, try to read GitHub repo from window.location (best-effort)
+    (function(){
+      const gh = document.getElementById('githubLink');
+      if(location.hostname.includes('github.io') || location.pathname !== '/'){
+        // try to set a friendly href, but leave it optional (user should edit)
+        const username = prompt("Optional: Enter your GitHub username for auto-link (leave blank to skip):","");
+        if(username) {
+          gh.href = "https://github.com/" + encodeURIComponent(username);
+          gh.textContent = "github.com/" + username;
+        }
+      }
+    })();
+  </script>
+</body>
+</html>

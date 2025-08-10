@@ -160,18 +160,7 @@
       }
     });
 
-    // If user didn't change placeholders, try to read GitHub repo from window.location (best-effort)
-    (function(){
-      const gh = document.getElementById('githubLink');
-      if(location.hostname.includes('github.io') || location.pathname !== '/'){
-        // try to set a friendly href, but leave it optional (user should edit)
-        const username = prompt("Optional: Enter your GitHub username for auto-link (leave blank to skip):","");
-        if(username) {
-          gh.href = "https://github.com/" + encodeURIComponent(username);
-          gh.textContent = "github.com/" + username;
-        }
-      }
-    })();
+   
   </script>
 </body>
 </html>

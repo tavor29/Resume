@@ -83,7 +83,7 @@ body {
 
 /* Container and layout */
 .wrap {
-  max-width: 90%;
+  max-width: 80%;
   min-width: 800px;
   margin: auto;
   padding: 20px;

@@ -51,7 +51,7 @@
       <div class="title">
         <h1>Tavor Ben Shahar</h1>
         <div class="sub">IT Project Manager | Technical Delivery Lead</div>
-        <div class="small" style="margin-top:10px">Tel Aviv, Israel &nbsp;·&nbsp; 0504922040 &nbsp;·&nbsp; <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c3b7b9a2b5acb1f1fa83a4aea2aaafeda0acae">[email&#160;protected]</a></div>
+        <div class="small" style="margin-top:10px">Tel Aviv, Israel &nbsp;·&nbsp; 0504922040 &nbsp;·&nbsp; tzavor29@gmail.com</div>
       </div>
       <div class="controls">
         <button class="icon" id="printBtn" title="Print resume">Print</button>
@@ -61,6 +61,144 @@
 
     <!-- Layout -->
     <div class="layout">
+      <!-- Main Column -->
+      <div>
+        <!-- Professional Summary -->
+        <div class="card">
+          <h2>Summary</h2>
+          <p>
+            IT Project Manager with 5+ years of experience leading complex, high-stakes technical projects for global Tier-1 organizations. Expert in managing the full project lifecycle from requirements gathering and budgeting to execution and delivery. Skilled in bridging the gap between technical engineering teams and business stakeholders using Agile and Waterfall methodologies. Proven ability to lead cross-functional teams, manage vendor relationships, and deliver critical systems on time and within budget in dynamic, fast-paced environments.
+          </p>
+        </div>
+
+        <!-- Experience -->
+        <div class="card">
+          <h2>Professional Experience</h2>
+
+          <div class="project">
+            <strong>IT Project Manager</strong>
+            <div class="company">Applied Materials</div>
+            <div class="dates">2023 – Present</div>
+            <ul>
+              <li>Manage the full project lifecycle for complex production and development initiatives supporting R&D environments, from planning and procurement through execution and handover.</li>
+              <li>Lead cross-functional teams across IT, engineering, operations, and vendors, ensuring alignment on scope, priorities, and delivery milestones.</li>
+              <li>Own multi-million-dollar budgets for IT systems and operations, translating technical requirements into BoMs, procurement strategies, and long-lead item tracking.</li>
+              <li>Drive data-driven project governance using automated dashboards and KPIs to monitor schedule, risks, budget utilization, and critical-path dependencies.</li>
+              <li>Act as the primary point of contact for multiple stakeholders, translating technical challenges into clear business impacts and decision points for senior management.</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <strong>Operations Manager</strong>
+            <div class="company">IBM</div>
+            <div class="dates">2021 – 2023</div>
+            <ul>
+              <li>Directed IT transformation initiatives and system deployments, integrating new technologies into enterprise environments under evolving requirements and timelines.</li>
+              <li>Led infrastructure upgrades, migrations, and disaster recovery initiatives, ensuring delivery aligned with approved scope, budget, and schedule.</li>
+              <li>Coordinated on-site technicians, engineering, and operations teams in a matrix organization to execute complex, multi-stream initiatives.</li>
+              <li>Owned User Acceptance Testing (UAT) and Hypercare phases for major upgrades, ensuring smooth adoption, operational stability, and minimal business disruption.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="card">
+          <h2>Education</h2>
+          <div class="project">
+            <strong>B.A., Business Administration — Information Systems</strong>
+            <div class="company">Ruppin Academic Center</div>
+            <div class="dates">2020 – 2023 &nbsp;·&nbsp; <em>Cum Laude</em></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <aside>
+        <!-- Contact -->
+        <div class="card">
+          <h2>Contact</h2>
+          <p class="small">Name: <strong>Tavor Ben Shahar</strong></p>
+          <p class="small">Email: <span id="emailPlaceholder">tzavor29@gmail.com</span></p>
+          <p class="small">Phone: 0504922040</p>
+          <p class="small">Location: Tel Aviv, Israel</p>
+          <p class="small">LinkedIn: <a href="https://www.linkedin.com/in/tavor-bs/" target="_blank" style="color:#c8a97e;text-decoration:none;">linkedin.com/in/tavor-bs</a></p>
+        </div>
+
+        <!-- Project Management Skills -->
+        <div class="card">
+          <h2>Project Management</h2>
+          <div class="skill-list">
+            <div class="skill">Agile</div>
+            <div class="skill">Scrum</div>
+            <div class="skill">Waterfall</div>
+            <div class="skill">Hybrid Delivery</div>
+            <div class="skill">Risk Management</div>
+            <div class="skill">LLI Design</div>
+            <div class="skill">Budgeting</div>
+            <div class="skill">Gantt Planning</div>
+          </div>
+        </div>
+
+        <!-- Leadership -->
+        <div class="card">
+          <h2>Leadership & Delivery</h2>
+          <div class="skill-list">
+            <div class="skill">Stakeholder Management</div>
+            <div class="skill">Vendor Negotiation</div>
+            <div class="skill">Cross-functional Leadership</div>
+            <div class="skill">Problem Solving</div>
+          </div>
+        </div>
+
+        <!-- Technical -->
+        <div class="card">
+          <h2>Technical Domain</h2>
+          <div class="skill-list">
+            <div class="skill">IT Infrastructure</div>
+            <div class="skill">Network Architecture</div>
+            <div class="skill">Cloud Solutions</div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="card">
+          <h2>Tools</h2>
+          <div class="skill-list">
+            <div class="skill">MS Project</div>
+            <div class="skill">Jira</div>
+            <div class="skill">Confluence</div>
+            <div class="skill">ServiceNow</div>
+            <div class="skill">Monday.com</div>
+            <div class="skill">SAP S/4HANA</div>
+            <div class="skill">AI / Vibe Coding</div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="card">
+          <h2>Languages</h2>
+          <p class="small">Hebrew — Native</p>
+          <p class="small">English — Fluent / Native Level</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('printBtn').addEventListener('click', function(){ window.print(); });
+    document.getElementById('copyEmail').addEventListener('click', async function(){
+      const text = "Tavor Ben Shahar\n0504922040\ntzavor29@gmail.com";
+      try {
+        await navigator.clipboard.writeText(text);
+        this.textContent = "Copied!";
+        setTimeout(()=> this.textContent = "Copy Contact", 1500);
+      } catch(e){
+        alert("Copy failed — please copy manually:\n" + text);
+      }
+    });
+  </script>
+</body>
+</html>    <div class="layout">
       <!-- Main Column -->
       <div>
         <!-- Professional Summary -->

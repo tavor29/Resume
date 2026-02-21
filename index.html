@@ -51,7 +51,7 @@
       <div class="title">
         <h1>Tavor Ben Shahar</h1>
         <div class="sub">IT Project Manager | Technical Delivery Lead</div>
-        <div class="small" style="margin-top:10px">Tel Aviv, Israel &nbsp;·&nbsp; 0504922040 &nbsp;·&nbsp; tzavor29@gmail.com</div>
+        <div class="small" style="margin-top:10px">Tel Aviv, Israel &nbsp;·&nbsp; 0504922040 &nbsp;·&nbsp; <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c3b7b9a2b5acb1f1fa83a4aea2aaafeda0acae">[email&#160;protected]</a></div>
       </div>
       <div class="controls">
         <button class="icon" id="printBtn" title="Print resume">Print</button>
@@ -118,9 +118,10 @@
         <div class="card">
           <h2>Contact</h2>
           <p class="small">Name: <strong>Tavor Ben Shahar</strong></p>
-          <p class="small">Email: <span id="emailPlaceholder">tzavor29@gmail.com</span></p>
+          <p class="small">Email: <span id="emailPlaceholder"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fb8f819a8d9489c9c2bb9c969a9297d5989496">[email&#160;protected]</a></span></p>
           <p class="small">Phone: 0504922040</p>
           <p class="small">Location: Tel Aviv, Israel</p>
+          <p class="small">LinkedIn: <a href="https://www.linkedin.com/in/tavor-bs/" target="_blank" style="color:#c8a97e;text-decoration:none;">linkedin.com/in/tavor-bs</a></p>
         </div>
 
         <!-- Project Management Skills -->
@@ -186,14 +187,13 @@
   <script>
     document.getElementById('printBtn').addEventListener('click', function(){ window.print(); });
     document.getElementById('copyEmail').addEventListener('click', async function(){
-      const emailElement = document.getElementById('emailPlaceholder');
-      const text = emailElement.textContent.trim();
+      const text = "Tavor Ben Shahar\n0504922040\ntzavor29@gmail.com";
       try {
         await navigator.clipboard.writeText(text);
         this.textContent = "Copied!";
         setTimeout(()=> this.textContent = "Copy Contact", 1500);
       } catch(e){
-        alert("Copy failed — please copy manually: " + text);
+        alert("Copy failed — please copy manually:\n" + text);
       }
     });
   </script>

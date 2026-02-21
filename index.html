@@ -4,23 +4,58 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Tavor Ben Shahar — IT Project Manager</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, 'Times New Roman', serif; background: #f5f3ef; color: #1a1a1a; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 32px 16px; }
+    .header { background: #1a1a1a; color: #f5f3ef; border-radius: 4px; padding: 32px 36px; display: flex; align-items: center; gap: 24px; margin-bottom: 24px; }
+    .avatar { width: 64px; height: 64px; border-radius: 50%; background: #c8a97e; color: #1a1a1a; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: bold; flex-shrink: 0; font-family: Georgia, serif; }
+    .title h1 { font-size: 26px; font-weight: bold; letter-spacing: 0.02em; }
+    .title .sub { color: #c8a97e; font-size: 14px; margin-top: 4px; font-style: italic; }
+    .title .small { color: #aaa; font-size: 13px; margin-top: 8px; }
+    .controls { margin-left: auto; display: flex; gap: 10px; flex-shrink: 0; }
+    button.icon { background: transparent; border: 1px solid #c8a97e; color: #c8a97e; padding: 8px 16px; border-radius: 3px; cursor: pointer; font-size: 13px; font-family: Georgia, serif; transition: background 0.2s, color 0.2s; }
+    button.icon:hover { background: #c8a97e; color: #1a1a1a; }
+    .layout { display: grid; grid-template-columns: 1fr 280px; gap: 20px; }
+    .card { background: #fff; border-radius: 4px; padding: 24px 28px; margin-bottom: 20px; border-left: 3px solid #c8a97e; }
+    h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #c8a97e; margin-bottom: 14px; font-family: Georgia, serif; }
+    p { font-size: 14px; line-height: 1.7; color: #333; }
+    .project { margin-bottom: 20px; }
+    .project:last-child { margin-bottom: 0; }
+    .project strong { font-size: 14px; color: #1a1a1a; display: block; margin-bottom: 6px; }
+    .project .company { font-size: 13px; color: #c8a97e; font-style: italic; margin-bottom: 6px; }
+    .project .dates { font-size: 12px; color: #888; margin-bottom: 8px; }
+    ul { padding-left: 18px; }
+    li { font-size: 14px; line-height: 1.7; color: #444; margin-bottom: 4px; }
+    .skill-list { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill { background: #f5f3ef; border: 1px solid #ddd; padding: 5px 12px; border-radius: 2px; font-size: 12px; color: #555; }
+    .small { font-size: 13px; color: #444; margin-bottom: 6px; line-height: 1.6; }
+    aside .card { margin-bottom: 20px; }
+    @media (max-width: 680px) {
+      .layout { grid-template-columns: 1fr; }
+      .header { flex-wrap: wrap; }
+      .controls { margin-left: 0; }
+    }
+    @media print {
+      body { background: #fff; }
+      .controls { display: none; }
+      .card { border: 1px solid #ddd; box-shadow: none; }
+    }
+  </style>
 </head>
 <body>
   <div class="wrap">
     <!-- Header -->
     <div class="header">
-      <div class="avatar" aria-hidden="true">TA</div>
+      <div class="avatar" aria-hidden="true">TB</div>
       <div class="title">
-        <h1>Tavor Ben Shahar — IT Project Manager</h1>
-        <div class="sub">IT Infrastructure & Data Center Projects</div>
-        <div class="contact-row" style="margin-top:10px">
-          <div class="small">Location: Rehovot, Israel</div>
-        </div>
+        <h1>Tavor Ben Shahar</h1>
+        <div class="sub">IT Project Manager | Technical Delivery Lead</div>
+        <div class="small" style="margin-top:10px">Tel Aviv, Israel &nbsp;·&nbsp; 0504922040 &nbsp;·&nbsp; tzavor29@gmail.com</div>
       </div>
       <div class="controls">
         <button class="icon" id="printBtn" title="Print resume">Print</button>
-        <button class="icon" id="copyEmail" title="Copy email to clipboard">Copy contact</button>
+        <button class="icon" id="copyEmail" title="Copy email to clipboard">Copy Contact</button>
       </div>
     </div>
 
@@ -29,128 +64,125 @@
       <!-- Main Column -->
       <div>
         <!-- Professional Summary -->
-        <div class="card section">
-          <h2>Professional Summary</h2>
+        <div class="card">
+          <h2>Summary</h2>
           <p>
-            Technical Project Manager with experience driving successful technology initiatives and optimizing IT processes.
-            Skilled in full lifecycle project management, vendor coordination, and delivering innovative solutions to meet organizational goals.
-            Adept at enhancing IT infrastructure performance, scalability, and reliability while ensuring compliance and business continuity.
+            IT Project Manager with 5+ years of experience leading complex, high-stakes technical projects for global Tier-1 organizations. Expert in managing the full project lifecycle from requirements gathering and budgeting to execution and delivery. Skilled in bridging the gap between technical engineering teams and business stakeholders using Agile and Waterfall methodologies. Proven ability to lead cross-functional teams, manage vendor relationships, and deliver critical systems on time and within budget in dynamic, fast-paced environments.
           </p>
         </div>
 
-        <!-- Core Skills -->
-        <div class="card section">
-          <h2>Core Skills</h2>
-          <div class="skill-list" style="margin-top:8px">
-            <div class="skill">Project Management</div>
-            <div class="skill">IT Infrastructure & Networking</div>
-            <div class="skill">Vendor & Stakeholder Management</div>
-            <div class="skill">Storage Solutions (Rubrik)</div>
-            <div class="skill">Procurement & Deployment</div>
-            <div class="skill">Risk & Timeline Mitigation</div>
-            <div class="skill">Documentation & Handover</div>
-            <div class="skill">Agile & Waterfall</div>
-          </div>
-        </div>
-
         <!-- Experience -->
-        <div class="card section">
-          <h2>Experience</h2>
+        <div class="card">
+          <h2>Professional Experience</h2>
 
           <div class="project">
-            <strong>Applied Materials – Rehovot, IL | IT Project Manager | Aug 2023 – Present</strong>
-            <div class="meta">
-              <ul>
-                <li>Lead IT projects across Campus and R&D environments, as well as datacenters and cleanrooms.</li>
-                <li>Take ownership of the full project lifecycle, including procurement and vendor management.</li>
-                <li>Deliver a wide range of projects from small-scale initiatives to large-scale infrastructure deployments.</li>
-              </ul>
-            </div>
+            <strong>IT Project Manager</strong>
+            <div class="company">Applied Materials</div>
+            <div class="dates">2023 – Present</div>
+            <ul>
+              <li>Manage the full project lifecycle for complex production and development initiatives supporting R&D environments, from planning and procurement through execution and handover.</li>
+              <li>Lead cross-functional teams across IT, engineering, operations, and vendors, ensuring alignment on scope, priorities, and delivery milestones.</li>
+              <li>Own multi-million-dollar budgets for IT systems and operations, translating technical requirements into BoMs, procurement strategies, and long-lead item tracking.</li>
+              <li>Drive data-driven project governance using automated dashboards and KPIs to monitor schedule, risks, budget utilization, and critical-path dependencies.</li>
+              <li>Act as the primary point of contact for multiple stakeholders, translating technical challenges into clear business impacts and decision points for senior management.</li>
+            </ul>
           </div>
 
           <div class="project">
-            <strong>Bank Hapoalim – Emek Hefer, IL | IT Operations Manager | Jul 2021 – May 2023</strong>
-            <div class="meta">
-              <ul>
-                <li>Managed a cross-functional team of technicians to deliver mission-critical multi-layered projects.</li>
-                <li>Developed and implemented SOPs to enhance operational effectiveness, maintain compliance, and mitigate risks.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Selected Projects -->
-        <div class="card section">
-          <h2>Notasble Projects</h2>
-
-          <div class="project">
-            <strong>PDC 5 Building — IT Infrastructure (Lead IT Project Manager)</strong>
-            <div class="meta">
-              <ul>
-                <li>Directed end-to-end IT implementation for a new corporate facility, including hardware, passive infrastructure, and multimedia systems.</li>
-                <li>Managed a $2.5M+ budget, optimized resource allocation, and coordinated vendors, contractors, and cross-functional teams for timely and secure delivery.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project">
-            <strong>Campus & R&D Core Switches Upgrade</strong>
-            <div class="meta">
-              <ul>
-                <li>Led core switch upgrades for Campus and R&D environments, from architecture design through implementation.</li>
-                <li>Developed migration strategy, minimized risk, ensured zero unplanned disruptions, and enhanced network reliability, performance, and scalability.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project">
-            <strong>Rubrik Data Storage Implementation</strong>
-            <div class="meta">
-              <ul>
-                <li>Oversaw Rubrik server deployment to upgrade data storage capabilities — covering procurement, hardware delivery, racking, validation, and stakeholder acceptance testing.</li>
-              </ul>
-            </div>
+            <strong>Operations Manager</strong>
+            <div class="company">IBM</div>
+            <div class="dates">2021 – 2023</div>
+            <ul>
+              <li>Directed IT transformation initiatives and system deployments, integrating new technologies into enterprise environments under evolving requirements and timelines.</li>
+              <li>Led infrastructure upgrades, migrations, and disaster recovery initiatives, ensuring delivery aligned with approved scope, budget, and schedule.</li>
+              <li>Coordinated on-site technicians, engineering, and operations teams in a matrix organization to execute complex, multi-stream initiatives.</li>
+              <li>Owned User Acceptance Testing (UAT) and Hypercare phases for major upgrades, ensuring smooth adoption, operational stability, and minimal business disruption.</li>
+            </ul>
           </div>
         </div>
 
+        <!-- Education -->
+        <div class="card">
+          <h2>Education</h2>
+          <div class="project">
+            <strong>B.A., Business Administration — Information Systems</strong>
+            <div class="company">Ruppin Academic Center</div>
+            <div class="dates">2020 – 2023 &nbsp;·&nbsp; <em>Cum Laude</em></div>
+          </div>
+        </div>
       </div>
 
       <!-- Right Column -->
       <aside>
         <!-- Contact -->
-        <div class="card section">
+        <div class="card">
           <h2>Contact</h2>
           <p class="small">Name: <strong>Tavor Ben Shahar</strong></p>
           <p class="small">Email: <span id="emailPlaceholder">tzavor29@gmail.com</span></p>
-          <p class="small">Location: Rehovot, Israel</p>
+          <p class="small">Phone: 0504922040</p>
+          <p class="small">Location: Tel Aviv, Israel</p>
         </div>
 
-        <!-- Quick Facts -->
-        <div class="card section">
-          <h2>Quick Facts</h2>
-          <ul>
-            <li>Languages: English (fluent), Hebrew (native)</li>
-            <li>Work style: Detailed, outcome-oriented, strong cross-team communicator</li>
-           
-          </ul>
-        </div>
-
-        <!-- Tools & Platforms -->
-        <div class="card section">
-          <h2>Skills</h2>
-          <div class="skill-list" style="margin-top:8px">
-            <div class="skill">Agile & Waterfall Methodologies</div>
-            <div class="skill">Project Lifecycle Management</div>
-            <div class="skill">Risk Management & Mitigation Planning</div>
-            <div class="skill">Stakeholder Management</div>
-            <div class="skill">Budgeting & Cost Control</div>
+        <!-- Project Management Skills -->
+        <div class="card">
+          <h2>Project Management</h2>
+          <div class="skill-list">
+            <div class="skill">Agile</div>
+            <div class="skill">Scrum</div>
+            <div class="skill">Waterfall</div>
+            <div class="skill">Hybrid Delivery</div>
+            <div class="skill">Risk Management</div>
+            <div class="skill">LLI Design</div>
+            <div class="skill">Budgeting</div>
+            <div class="skill">Gantt Planning</div>
           </div>
+        </div>
+
+        <!-- Leadership -->
+        <div class="card">
+          <h2>Leadership & Delivery</h2>
+          <div class="skill-list">
+            <div class="skill">Stakeholder Management</div>
+            <div class="skill">Vendor Negotiation</div>
+            <div class="skill">Cross-functional Leadership</div>
+            <div class="skill">Problem Solving</div>
+          </div>
+        </div>
+
+        <!-- Technical -->
+        <div class="card">
+          <h2>Technical Domain</h2>
+          <div class="skill-list">
+            <div class="skill">IT Infrastructure</div>
+            <div class="skill">Network Architecture</div>
+            <div class="skill">Cloud Solutions</div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="card">
+          <h2>Tools</h2>
+          <div class="skill-list">
+            <div class="skill">MS Project</div>
+            <div class="skill">Jira</div>
+            <div class="skill">Confluence</div>
+            <div class="skill">ServiceNow</div>
+            <div class="skill">Monday.com</div>
+            <div class="skill">SAP S/4HANA</div>
+            <div class="skill">AI / Vibe Coding</div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="card">
+          <h2>Languages</h2>
+          <p class="small">Hebrew — Native</p>
+          <p class="small">English — Fluent / Native Level</p>
         </div>
       </aside>
     </div>
   </div>
 
-  <!-- Scripts -->
   <script>
     document.getElementById('printBtn').addEventListener('click', function(){ window.print(); });
     document.getElementById('copyEmail').addEventListener('click', async function(){
@@ -159,7 +191,7 @@
       try {
         await navigator.clipboard.writeText(text);
         this.textContent = "Copied!";
-        setTimeout(()=> this.textContent = "Copy contact", 1500);
+        setTimeout(()=> this.textContent = "Copy Contact", 1500);
       } catch(e){
         alert("Copy failed — please copy manually: " + text);
       }
